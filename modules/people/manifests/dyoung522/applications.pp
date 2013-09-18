@@ -1,5 +1,4 @@
 class people::dyoung522::applications {
-  include zsh
   include alfred
   include postgresql
   include rubymine
