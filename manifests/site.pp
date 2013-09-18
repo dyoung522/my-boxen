@@ -78,6 +78,7 @@ node default {
   # common, useful packages
   package {
     [
+      'zsh',
       'ack',
       'findutils',
       'coreutils',
@@ -85,7 +86,7 @@ node default {
     ]:
   }
 
-  file { "${boxen::config::srcdir}/our-boxen":
+  file { "${boxen::config::srcdir}/my-boxen":
     ensure => link,
     target => $boxen::config::repodir
   }
