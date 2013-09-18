@@ -36,3 +36,16 @@ github "xquartz",    "1.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+github "zsh",        "1.0.0"
+github "alfred",     "1.1.4"
+github "postgresql", "2.0.1"
+github "rubymine",   "1.0.3"
+github "vim",        "1.0.5"
+github "macvim",     "1.0.0"
+github "onepassword","1.0.2"
+github "dropbox",    "1.1.1"
+github "heroku",     "2.0.0"
+github "foreman",    "1.0.0"
+github "property_list_key", "0.1.0", :repo => "glarizza/puppet-property_list_key"
+
