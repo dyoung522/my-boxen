@@ -9,5 +9,5 @@ This is a the Boxen repo for dyoung522.
 3. Run the following script
 
 ```bash
-bash -c "$(curl -fsSL https://gist.github.com/dyoung522/6611091/raw/14b983cafb7e1ddcbddfb820bf6e812d0751919a/boxen-setup.sh)"
+bash -c "$(curl -fsSL https://gist.github.com/dyoung522/6611091/raw/boxen-setup.sh)"
 ```
