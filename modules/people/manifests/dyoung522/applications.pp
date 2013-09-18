@@ -17,6 +17,5 @@ class people::dyoung522::applications {
 #  include dropbox
 #  include heroku
 #  include foreman
-  include iterm2
 }
 
