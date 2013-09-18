@@ -1,5 +1,7 @@
 class people::dyoung522::properties {
 
+  $my_homedir = "/Users/${::boxen_user}"
+
   # Disable Gatekeeper so you can install any package you want
   property_list_key { 'Disable Gatekeeper':
     ensure => present,
@@ -7,8 +9,6 @@ class people::dyoung522::properties {
     key    => 'enabled',
     value  => 'no',
   }
-
-  $my_homedir = "/Users/${::boxen_user}"
 
   # NOTE: Dock prefs only take effect when you restart the dock
   property_list_key { 'Hide the dock':
@@ -54,9 +54,7 @@ class people::dyoung522::properties {
   file { 'Dock Plist':
     ensure  => file,
     require => [
-      Property_list_key['Lower Right Hotcorner - Screen Saver - modifier'],
       Property_list_key['Hide the dock'],
-      Property_list_key['Align the Dock Left'],
       Property_list_key['Lower Right Hotcorner - Screen Saver'],
       Property_list_key['Lower Right Hotcorner - Screen Saver - modifier']
     ],
