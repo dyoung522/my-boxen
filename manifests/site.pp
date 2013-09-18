@@ -78,7 +78,6 @@ node default {
   # common, useful packages
   package {
     [
-      'zsh',
       'ack',
       'findutils',
       'coreutils',
