@@ -12,10 +12,5 @@ class people::dyoung522::dotfiles {
     path    => "${my_dotfiles}/scripts/",
     require => Repository["${my_dotfiles}"],
   }
-
-  exec { 'dotfilessubmodules':
-    command => "cd ${my_dotfiles} && git submodule init && git submodule update",
-    notify => Repository["${my_dotfiles}"],
-  }
 }
 
