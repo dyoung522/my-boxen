@@ -7,15 +7,15 @@ class people::dyoung522::applications {
   }
 
   include zsh
-#  include alfred
-#  include postgresql
-#  include rubymine
-#  include sourcetree
-#  include vim
-#  include macvim
-#  include onepassword
-#  include dropbox
-#  include heroku
-#  include foreman
+  include vim
+  include macvim
+  include postgresql
+  include dropbox
+  #include alfred
+  #include rubymine
+  #include sourcetree
+  #include onepassword
+  #include heroku
+  #include foreman
 }
 
