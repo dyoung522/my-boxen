@@ -11,22 +11,14 @@ class people::dyoung522::properties {
   }
 
   # NOTE: Dock prefs only take effect when you restart the dock
-  property_list_key { 'Hide the dock':
-    ensure     => present,
-    path       => "${my_homedir}/Library/Preferences/com.apple.dock.plist",
-    key        => 'autohide',
-    value      => true,
-    value_type => 'boolean',
-    notify     => Exec['Restart the Dock'],
-  }
-
-  property_list_key { 'Align the Dock Left':
-    ensure     => present,
-    path       => "${my_homedir}/Library/Preferences/com.apple.dock.plist",
-    key        => 'orientation',
-    value      => 'left',
-    notify     => Exec['Restart the Dock'],
-  }
+#  property_list_key { 'Hide the dock':
+#    ensure     => present,
+#    path       => "${my_homedir}/Library/Preferences/com.apple.dock.plist",
+#    key        => 'autohide',
+#    value      => true,
+#    value_type => 'boolean',
+#    notify     => Exec['Restart the Dock'],
+#  }
 
   property_list_key { 'Lower Right Hotcorner - Screen Saver':
     ensure     => present,
