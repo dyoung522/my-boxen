@@ -7,8 +7,8 @@ class people::dyoung522::dotfiles {
     source => 'dyoung522/dotfiles',
   }
 
-  exec { "bootstrap dotfiles":
-    command => "cd ${my_homedir}; ${my_dotfiles}/script/install",
+  exec { "install dotfiles":
+    command => "cd ${my_dotfiles}; script/install",
     require => Repository["${my_dotfiles}"],
   }
 }
