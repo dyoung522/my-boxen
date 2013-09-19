@@ -8,9 +8,9 @@ class people::dyoung522::applications {
 
   include zsh
   include vim
-  include macvim
-  include postgresql
-  include dropbox
+#  include macvim
+#  include postgresql
+#  include dropbox
   #include alfred
   #include rubymine
   #include sourcetree
