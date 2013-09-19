@@ -8,8 +8,7 @@ class people::dyoung522::dotfiles {
   }
 
   exec { "bootstrap dotfiles":
-    command => "bootstrap",
-    path    => "${my_dotfiles}/script/",
+    command => "${my_dotfiles}/script/bootstrap",
     require => Repository["${my_dotfiles}"],
   }
 }
